@@ -1,0 +1,122 @@
+[WARN] [2024-11-07 18:11:13] PHP CLI is disabled manually, plugin will omit all PHP CLI steps.
+[WARN] [2024-11-07 18:11:13] PHP CLI file cannot be executed due to unknown reason.
+[STEP] [2024-11-07 18:11:13] Initializing backup...
+[INFO] [2024-11-07 18:11:13] Backup & Migration version: 1.4.6
+[INFO] [2024-11-07 18:11:13] Site which will be backed up: https://dev-cac404.pantheonsite.io
+[INFO] [2024-11-07 18:11:13] PHP Version: 8.2.25
+[INFO] [2024-11-07 18:11:13] WP Version: 6.6.2
+[INFO] [2024-11-07 18:11:13] MySQL Version: 5.5.30
+[INFO] [2024-11-07 18:11:13] MySQL Max Length: 67108864
+[INFO] [2024-11-07 18:11:13] Web server: nginx/1.27.1
+[INFO] [2024-11-07 18:11:13] Max execution time (in seconds): 120
+[INFO] [2024-11-07 18:11:13] Memory limit (server): 256M
+[INFO] [2024-11-07 18:11:13] Memory limit (wp-config): 40M
+[INFO] [2024-11-07 18:11:13] Memory limit (wp-config admin): 256M
+[INFO] [2024-11-07 18:11:13] Max rows per query (this site): 2000
+[INFO] [2024-11-07 18:11:13] Checking if backup dir is writable...
+[INFO] [2024-11-07 18:11:13] Initializing custom error handler
+[SUCCESS] [2024-11-07 18:11:13] Yup it is writable...
+[STEP] [2024-11-07 18:11:13] Scanning files...
+[WARN] [2024-11-07 18:11:13] Removing file from backup (due to path rules): /code/wp-content/backup-migration-config.php
+[INFO] [2024-11-07 18:11:13] Total size of excluded files: 2336 bytes
+[VERBOSE] [2024-11-07 18:11:13] Total size of excluded files (bytes): 2336
+[STEP] [2024-11-07 18:11:13] Checking free space, reserving...
+[INFO] [2024-11-07 18:11:13] Requires at least 231082033 bytes. [220.38 MB]
+[INFO] [2024-11-07 18:11:13] Disk free space function is disabled by hosting.
+[INFO] [2024-11-07 18:11:13] Using dummy file to check free space (it can take some time).
+[SUCCESS] [2024-11-07 18:11:15] Confirmed, there is more than enough space, checked: 231082033 bytes
+[INFO] [2024-11-07 18:11:15] Scanning done - found 6857 files...
+[SUCCESS] [2024-11-07 18:11:15] Backup initialized...
+[STEP] [2024-11-07 18:11:15] Initializing archiving system...
+[SUCCESS] [2024-11-07 18:11:15] Archive system initialized...
+[STEP] [2024-11-07 18:11:15] Preparing map of files...
+[SUCCESS] [2024-11-07 18:11:15] Files prepared.
+[INFO] [2024-11-07 18:11:15] Starting compression process...
+[STEP] [2024-11-07 18:11:15] Smart memory calculation...
+[INFO] [2024-11-07 18:11:15] There is 256 MBs of memory to use
+[INFO] [2024-11-07 18:11:15] WordPress memory limit: 256 MBs
+[SUCCESS] [2024-11-07 18:11:15] Setting the safe limit to 57 MB
+[INFO] [2024-11-07 18:11:15] ZipArchive is available this process should use ZipArchive
+[INFO] [2024-11-07 18:11:15] Legacy setting: Using default modules depending on user server
+[STEP] [2024-11-07 18:11:15] Making database backup (using v3 engine, requires at least v1.2.2 to restore)
+[INFO] [2024-11-07 18:11:15] Iterating database...
+[INFO] [2024-11-07 18:11:15] Memory usage after initialization: 7.16 MB
+[VERBOSE] [2024-11-07 18:11:15] Exporting database via zip.php
+[INFO] [2024-11-07 18:11:15] Scan found 19 tables (1941 rows), estimated total size: 13.91 MB.
+[INFO] [2024-11-07 18:11:15] Memory usage after getting table names: 7.17 MB 
+[INFO] [2024-11-07 18:11:15] Getting table recipes...
+[INFO] [2024-11-07 18:11:15] Table recipes have been exported.
+[INFO] [2024-11-07 18:11:15] Memory usage after loading recipes: 7.19 MB 
+[INFO] [2024-11-07 18:11:15] Saving recipes...
+[INFO] [2024-11-07 18:11:15] Recipes saved.
+[INFO] [2024-11-07 18:11:15] Memory usage after recipe off-load: 7.18 MB
+[INFO] [2024-11-07 18:11:15] Exporting table data...
+[STEP] [2024-11-07 18:11:15] Getting data of table: _pantheon_heartbeat (1/19, 0.02 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: _pantheon_heartbeat finished (0.00203s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: _pt_heartbeat (2/19, 0.02 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: _pt_heartbeat finished (0.00134s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_commentmeta (3/19, 0.05 MB)
+[INFO] [2024-11-07 18:11:15] Table wp_commentmeta is empty, saving only recipe.
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_comments (4/19, 0.09 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_comments finished (0.00146s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_e_events (5/19, 0.03 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_e_events finished (0.00137s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_e_submissions (6/19, 0.28 MB)
+[INFO] [2024-11-07 18:11:15] Table wp_e_submissions is empty, saving only recipe.
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_e_submissions_actions_log (7/19, 0.13 MB)
+[INFO] [2024-11-07 18:11:15] Table wp_e_submissions_actions_log is empty, saving only recipe.
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_e_submissions_values (8/19, 0.05 MB)
+[INFO] [2024-11-07 18:11:15] Table wp_e_submissions_values is empty, saving only recipe.
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_links (9/19, 0.03 MB)
+[INFO] [2024-11-07 18:11:15] Table wp_links is empty, saving only recipe.
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_options (10/19, 3.11 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_options finished (0.04016s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_postmeta (11/19, 7.55 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_postmeta finished (0.09931s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_posts (12/19, 1.56 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_posts finished (0.01919s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_simply_static_pages (13/19, 0.70 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_simply_static_pages finished (0.05768s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_term_relationships (14/19, 0.03 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_term_relationships finished (0.00181s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_term_taxonomy (15/19, 0.05 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_term_taxonomy finished (0.00151s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_termmeta (16/19, 0.05 MB)
+[INFO] [2024-11-07 18:11:15] Table wp_termmeta is empty, saving only recipe.
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_terms (17/19, 0.05 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_terms finished (0.00148s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_usermeta (18/19, 0.05 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_usermeta finished (0.00245s)
+[STEP] [2024-11-07 18:11:15] Getting data of table: wp_users (19/19, 0.06 MB)
+[SUCCESS] [2024-11-07 18:11:15] Table export for: wp_users finished (0.00120s)
+[INFO] [2024-11-07 18:11:15] Table data exported.
+[INFO] [2024-11-07 18:11:15] Memory usage after data export: 7.16 MB
+[INFO] [2024-11-07 18:11:15] Entire process took: 0.2607 s
+[SUCCESS] [2024-11-07 18:11:15] Database backup finished
+[STEP] [2024-11-07 18:11:15] Making archive
+[INFO] [2024-11-07 18:11:15] Compressing...
+[WARN] [2024-11-07 18:11:15] Backup will run as single-request, may be unstable...
+[INFO] [2024-11-07 18:11:15] Using ZipArchive extension for this backup process.
+[STEP] [2024-11-07 18:11:15] Adding database SQL file(s) to the backup file.
+[VERBOSE] [2024-11-07 18:11:15] Database files in total found: 19
+[SUCCESS] [2024-11-07 18:11:15] Database added to the backup successfully.
+[STEP] [2024-11-07 18:11:15] Performing site files backup...
+[INFO] [2024-11-07 18:11:15] Chunks contain 500 files.
+[INFO] [2024-11-07 18:11:16] Milestone: 500/6857
+[INFO] [2024-11-07 18:11:16] Milestone: 1000/6857
+[INFO] [2024-11-07 18:11:17] Milestone: 1500/6857
+[INFO] [2024-11-07 18:11:17] Milestone: 2000/6857
+[INFO] [2024-11-07 18:11:18] Milestone: 2500/6857
+[INFO] [2024-11-07 18:11:19] Milestone: 3000/6857
+[INFO] [2024-11-07 18:11:20] Milestone: 3500/6857
+[INFO] [2024-11-07 18:11:20] Milestone: 4000/6857
+[INFO] [2024-11-07 18:11:21] Milestone: 4500/6857
+[INFO] [2024-11-07 18:11:22] Milestone: 5000/6857
+[INFO] [2024-11-07 18:11:23] Milestone: 5500/6857
+[INFO] [2024-11-07 18:11:24] Milestone: 6000/6857
+[INFO] [2024-11-07 18:11:24] Milestone: 6500/6857
+[INFO] [2024-11-07 18:11:25] Milestone: 6857/6857
+[SUCCESS] [2024-11-07 18:11:25] Compressed 6857 files
+[INFO] [2024-11-07 18:11:25] Archiving of 6857 files took: 10.71s
+[STEP] [2024-11-07 18:11:25] Finalizing backup
+[INFO] [2024-11-07 18:11:25] Generating manifest file and saving current live-log...
